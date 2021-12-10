@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+<section class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">欢迎回来！</h2>
+                    <a href="/signup">
+                        <h3 class="section-subheading text-muted">还没有账号？新用户点击注册</h3>
+                    </a>
+                </div>
+                <div class="container px-5 my-5">
+                    <form id="contactForm" action="/login" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label" for="email">邮箱</label>
+                            <input class="form-control" name="email" type="email" placeholder="请输入邮箱地址" data-sb-validations="email,required" />
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">邮箱地址不可为空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">密码</label>
+            <input class="form-control" name="password" type="password" placeholder="请输入密码" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="密码:required">密码不可为空</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">登录成功！</div>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+                        <br>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">完成</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </div>
+</section>
+
+{% endblock %}

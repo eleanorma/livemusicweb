@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+
+<!--基础信息-->
+<div class="container">
+<div class="row row-broken bootstrap snippets bootdeys">
+    <div class="col-xs-12 cover">
+        <img src="{{ url_for('static', filename='assets/img/bg.jpg')}}" class="cover-img" alt="image">
+        <div class="cover-inside cover-blackout text-c text-light">
+            <img class="cover-avatar size-md img-round" src="{{ url_for('static', filename='assets/img/profile/x1.jpeg')}}" alt="profile">
+            <div class="field name font-weight-700">落日飞车</div>
+            <br>
+            <div class="field place mb-0" contenteditable="False">8.2
+								<span class="rating">
+								<label for="stars-rating-5"><i class="fa fa-star text-primary"></i></label>
+								<label for="stars-rating-4"><i class="fa fa-star text-primary"></i></label>
+								<label for="stars-rating-3"><i class="fa fa-star text-primary"></i></label>
+								<label for="stars-rating-2"><i class="fa fa-star text-primary"></i></label>
+								<label for="stars-rating-1"><i class="fa fa-star-half-alt text-primary"></i></label>
+							</span>
+                    </div>
+            
+            
+           <p class="mb-0">台湾/独立/浪漫 迷幻 氛围
+              <p class="mb-0">热门作品：My Jinji 我是一只鱼</p>
+            <div class="help-block-1 hidden-xs">
+                <button type="button" class="btn btn-primary f-l">收藏</button>
+                <a type="button" class="btn btn-outline-primary f-r" href="#review">看过</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="http://91.234.35.26/iwiki-admin/v1.0.0/admin/js/jquery.sparkline.min.js"></script>  
+
+<!--简介-->
+<br>
+<div class="container">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card-blog border border-primary">
+      <h5>简介</h5>
+      <p>落日飞车，三人编制的台湾摇滚乐团（主唱/吉他手国国、贝斯手KEVIN以及鼓手尊龙），2011年9月发行首张专辑《Bossa Nova》，凭借复古迷幻的曲风收获海内外大批粉丝的喜爱，被称作“华语地区最浪漫乐队”。</p>
+    </div>
+    <div class="card-blog border border-primary">
+      <h5>现场视频</h5>
+      <div class="card-label text-left">🎵I know you know I love you - 2018</div>
+      <img style="height:200px;" src="{{ url_for('static', filename='assets/img/mockup.jpg')}}"> 
+    </div>
+    </div>
+    <div class="rightcolumn">
+    <div class="card-blog border border-primary">
+      <h5>乐迷评价</h5>
+        <div class="media border p-3">
+            <div class="media-body">
+                <h6>John Doe <small></small></h6>
+                <p>Lorem ipsum...</p>
+            </div>           
+        </div>
+        <div class="media border p-3">
+  <div class="media-body">
+    <h6>John Doe <small></small></h6>
+    <p>Lorem ipsum...</p>
+  </div>           
+</div>
+        <div class="media border p-3">
+  <div class="media-body">
+    <h6>John Doe <small></small></h6>
+    <p>Lorem ipsum...</p>
+  </div>           
+</div>
+    </div>
+    <div class="card-blog border border-primary">
+      <h5>热门单曲试听</h5>
+        <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵Doo Doo Bird - Shewillhewill</div>
+        <br>
+        <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵Doo Doo Bird - Shewillhewill</div>
+        <br>
+        <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵Doo Doo Bird - Shewillhewill</div>
+      
+    </div>  
+  </div>
+      
+  </div>
+
+
+
+<!--现场视频-->
+
+<!--乐评人评价-->
+
+<!--乐迷短评-->
+
+<!--打分短评-->
+    <hr>
+<section class="page-section" id="review">
+<div class="panel">
+    <h5 class="pull-left">发布你的短评</h5>
+    <h6 class="pull-left text-muted">为看过的乐队现场评分</h6>
+    
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    <br>
+  <div class="panel-body">
+    <textarea class="form-control" rows="4" placeholder="说说你的评价吧" required=""></textarea>
+    <div class="mar-top clearfix">
+      <button class="btn btn-sm btn-primary pull-right" type="submit">发布</button>
+      
+    </div>
+  </div>
+</div>
+    </section>
+    </div>
+
+{% endblock %}

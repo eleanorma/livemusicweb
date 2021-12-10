@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block header %}
+        <!--头图-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Live Music Is A Lifestyle</div>
+                <div class="masthead-heading text-uppercase">演出资讯</div>
+            </div>
+        </header>
+{% endblock %}
+{% block content %}
+<audio controls>
+ <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+</audio>
+
+
+{% endblock %}

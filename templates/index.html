@@ -1,0 +1,378 @@
+{% extends "base.html" %}
+{% block header %}
+        <!--头图-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Live Music Is A Lifestyle</div>
+                <div class="masthead-heading text-uppercase">看LIVE，就现在！</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="/shows">看演出</a>
+            </div>
+        </header>
+{% endblock %}
+{% block content %}
+<!-- 乐队展示-->
+        <section class="page-section bg-light" id="portfolio">
+                 <div class="container">
+                <div class="text-start">
+                    <h3 class="section-heading text-uppercase">📢新声广播站</h3>
+                    <h3 class="section-subheading text-muted">新乐队拯救歌荒</h3>
+                </div>    
+      <div class="row">
+<!-- 11111111111-->
+        <div class="col-md-3">
+          <div class="col-lg-12 col-6 p-3">
+            <div class="card border border-primary"> 
+                <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                    <img class="img-new img-thumbnail p-2" src="{{ url_for('static', filename='assets/img/new/shehe.jpeg')}}" alt="Card image cap">
+                    </a>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> <b>Shewillhewill</b></h5>
+                <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵Doo Doo Bird - Shewillhewill</div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--2222222222222222-->
+        <div class="col-md-3">
+          <div class="col-lg-12 col-6 p-3">
+            <div class="card border border-primary">
+                <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-new img-thumbnail p-2" src="{{ url_for('static', filename='assets/img/new/sea.jpeg')}}" alt="Card image cap">
+                    </a>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> <b>海妖</b></h5>
+                <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/春日部的告别 - 海妖.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵春日部的告别 - 海妖</div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--3333333333333333333-->
+        <div class="col-md-3">
+          <div class="col-lg-12 col-6 p-3">
+            <div class="card border border-primary"> 
+                <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                <img class="img-new img-thumbnail p-2" src="{{ url_for('static', filename='assets/img/new/dulo.jpeg')}}" alt="Card image cap">
+                    </a>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> <b>渡洛西汀</b></h5>
+                <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/等太阳落山，就一起做梦 - 渡洛西汀.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵等太阳落山就一起做梦 - 渡洛西汀</div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--44444444444444444444444444-->
+        <div class="col-md-3">
+          <div class="col-lg-12 col-6 p-3" >
+            <div class="card border border-primary">
+                <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                <img class="img-new img-thumbnail p-2" src="{{ url_for('static', filename='assets/img/new/ocean.jpeg')}}" alt="Card image cap">
+                    </a>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> <b>飞古鹿海</b></h5>
+                <audio controls>
+ <source src="{{ url_for('static', filename='assets/music/安定 ll - 飞古鹿海.mp3')}}" type="audio/mp3">
+</audio>
+                <div class="card-label text-center">🎵安定 ll - 飞古鹿海</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                          
+<!--乐队展示popup Modals-->
+<!-- 111111111111111-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="modal-body">
+                                    <!-- detail-->
+                                    <div class="row">
+                                        <div class="col-md-4 col-3"> <img class="img-fluid d-block img-thumbnail" src="{{ url_for('static', filename='assets/img/new/shehe.jpeg')}}"> </div>
+                                        <div class="d-flex  col-md-8 flex-column justify-content-center align-items-start col-9">
+                                            <p class="mb-0 lead">Shewillhewill<br/>“她和他打定主意要去做一件事情”</p>
+                                            <div class="row">
+                                                <span class="tag-new">#独立</span>
+                                                <span class="tag-new">#电子</span>
+                                                <span class="tag-new">#摇滚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5>关于我们</h5>
+                                        <p align=justify class="mb-1">Shewillhewill像是一个秘密的音乐计划，这个计划里的She和He可以是一个具体的人，也可以是指向某一类人群的画像。TA们的第一首作品《The Corner We Call It Home》就入选了去年的南京独立音乐合集《南京早上好》，让他们获得了不少关注和乐迷。</p>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5 class="text-left">最新动态</h5>
+                                        <p class="mb-0">📎2021年10月发布最新单曲《Doo Doo Bird》</p>
+                                        <div class="card-label">🎵Doo Doo Bird</div>
+                                        <audio controls>
+                                            <source src="{{ url_for('static', filename='assets/music/Doo Doo Bird - Shewillhewill.mp3')}}" type="audio/mp3">
+                                        </audio>
+                                        <br>
+                                        <p class="mb-0">📎2021年9月发布单曲《Тетрис &lt;Tetris&gt;》入选网易云音乐「硬地原创音乐榜」9月榜单</p>
+                                        <div class="card-label">🎵Тетрис &lt;Tetris&gt;</div>
+                                        <video width="330" height="210" controls>
+  <source src="{{ url_for('static', filename='assets/video/teris.mp4')}}" type="video/mp4"></video>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-outline-primary btn-m" href="https://weibo.com/u/7535268553?from=feed&loc=at&sudaref=www.google.com&nick=Shewillhewill&is_all=1" target="_blank">查看音乐人微博了解更多</a>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- 222222222222222 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="modal-body">
+                                    <!-- detail-->
+                                    <div class="row">
+                                        <div class="col-md-4 col-3"> <img class="img-fluid d-block img-thumbnail" src="{{ url_for('static', filename='assets/img/new/sea1.jpeg')}}"> </div>
+                                        <div class="d-flex  col-md-8 flex-column justify-content-center align-items-start col-9">
+                                            <p class="mb-0 lead">海妖乐队-SeaMaiden</p>
+                                            <div class="row">
+                                                <span class="tag-new">#独立</span>
+                                                <span class="tag-new">#摇滚</span>
+                                                <span class="tag-new">#电子</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5>关于我们</h5>
+                                        <p align=justify class="mb-1">海妖 (Sea-Maiden) 成立于2019年9月夏末，乐队结缘归结于19年初贝斯手牛亚楠创作的一首无名 demo，好似梦里飞行在光怪陆离的城市，这首歌把五个人的臆想情节联结到一起， 第一首同名单曲和海妖乐队同时上线。 海妖的音乐风格为SynthPop/NuDisco，先后发布了单曲《粉红泡泡梦》、《游》等，并与 2020年9月加入声之岛厂牌。随即完成了北京、杭州、上海、郑州等城市的首演，他们轻盈的律动和曼妙的歌声营造出的浪漫氛围获得了乐迷的一致好评。</p>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5 class="text-left">最新动态</h5>
+                                        <p class="mb-0">📎2021年12月发布首张全长专辑《Sweet Waves》</p>
+                                        <div class="card-label">🎵Shalala-海妖</div>
+                                        <video width="330" height="210" controls>
+  <source src="{{ url_for('static', filename='assets/video/shalala.mp4')}}" type="video/mp4"></video>
+                                        <br>
+                                        <p class="mb-0">📎近期演出预告</p>
+                                        <p>2021/12/24 📍上海 MAOLivehouse<br/>2021/12/25 📍南京 稻香音乐空间<br/>2021/12/31 📍青岛 So.Downtown</p>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-outline-primary btn-m" href="https://weibo.com/n/%E6%B5%B7%E5%A6%96%E4%B9%90%E9%98%9F?tabtype=feed" target="_blank">查看音乐人微博了解更多</a>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<!-- 3333333333333333333333 -->
+                                <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="modal-body">
+                                    <!-- detail-->
+                                    <div class="row">
+                                        <div class="col-md-4 col-3"> <img class="img-fluid d-block img-thumbnail" src="{{ url_for('static', filename='assets/img/new/dulo.jpeg')}}"> </div>
+                                        <div class="d-flex  col-md-8 flex-column justify-content-center align-items-start col-9">
+                                            <p class="mb-0 lead">渡洛西汀乐队</p>
+                                            <div class="row">
+                                                <span class="tag-new">#独立</span>
+                                                <span class="tag-new">#摇滚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5>关于我们</h5>
+                                        <p align=justify class="mb-1">渡洛西汀是一支生活在广州的独立乐队，成立于2019年的圣诞节。就像是一种常见的抑郁症治疗药物，他们渴望触摸到那些选择躲在孤单角落的群体。出生于千禧年前后的他们，擅长把一些对生活的思考用矛盾的情绪雕刻进音乐里，形成了独属于渡洛西汀的理科浪漫。</p>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5 class="text-left">最新动态</h5>
+                                        <p class="mb-0">📎2021年12月发布第四首单曲《灵魂在下雨天是自由（Waste my love）》。创作动机来源于对“我”和“除了我”以外的世界的思考。在生活的大多时候，我们都在扮演一个普通人的角色，只有在下雨的时候能够暴露出自己最敏感脆弱的一面，可以让五花八门的思考在脑中绽放，仿佛自由人…</p>
+                                        <div class="card-label">🎵灵魂在下雨天是自由-渡洛西汀</div>
+                                        <video width="330" height="210" controls>
+  <source src="{{ url_for('static', filename='assets/video/soul.mp4')}}" type="video/mp4"></video>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-outline-primary btn-m" href="https://weibo.com/u/6923584135?refer_flag=1005050010_" target="_blank">查看音乐人微博了解更多</a>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- 44444444444444444444 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="modal-body">
+                                    <!-- detail-->
+                                    <div class="row">
+                                        <div class="col-md-4 col-3"> <img class="img-fluid d-block img-thumbnail" src="{{ url_for('static', filename='assets/img/new/ocean.jpeg')}}"> </div>
+                                        <div class="d-flex  col-md-8 flex-column justify-content-center align-items-start col-9">
+                                            <p class="mb-0 lead">飞古鹿海FigureOcean</p>
+                                            <div class="row">
+                                                <span class="tag-new">#独立</span>
+                                                <span class="tag-new">#后摇</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5>关于我们</h5>
+                                        <p align=justify class="mb-1">飞古鹿海是来自杭州实验器乐摇滚乐队。“我看着太阳升起来，却根本感受不到一点温暖。人类的感情总是藏在天上、海里，历史中，自然里，我们是飞古鹿海，我们有很多感情，有很多故事，有很多壁垒。”他们的每首曲子都像是一场旅程，你可以一起去经历一起去冒险。不管怎样，熔岩也好极夜也好，只会在他们演奏的这几分钟出现，而放下琴后相视释怀的微笑，就是他们愿意对生活交出的善意。</p>
+                                    </div>
+                                    <div class="card-blog border border-primary">
+                                        <h5 class="text-left">最新动态</h5>
+                                        <p class="mb-0">📎2021年12月发布乐队同名专辑《Figure Ocean》，这也是他们成立以来向大家交出的首张完整答卷。</p>
+                                        <div class="card-label">🎵滨海公园-飞古鹿海</div>
+                                        <video width="330" height="210" controls>
+  <source src="{{ url_for('static', filename='assets/video/ocean.mp4')}}" type="video/mp4"></video>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-outline-primary btn-m" href="https://weibo.com/u/6559823429?refer_flag=1005050010_" target="_blank">查看音乐人微博了解更多</a>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- livehouse活动-->
+            <br>
+            <br>
+<div class="container">
+                <div class="text-start">
+                    <h3 class="section-heading text-uppercase">📋活动公告栏</h3>
+                    <h3 class="section-subheading text-muted">Livehouse不只有Live</h3>
+                </div>
+<!-- 1111111111111111 -->
+    <div class="card-media border border-primary">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url({{ url_for ('static', filename='assets/img/venue/banner1.jpeg') }});"></div>
+        <span class="card-media-object-tag subtle-sm"><b>火热售票中</b></span>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">2021/12/24</span>
+          <span class="subtle-info"><b>票价 ¥180起</b></span>
+          <a class="subtle u-float-right" href="https://mp.weixin.qq.com/s/eAVDISNO6jNxC5z_hyHmIg" target="_blank">查看详情</a>
+      </div>
+        <span class="card-media-body-heading"><h6>十四城联动「平安夜一起来听歌」圣诞特别版演唱会</h6></span>
+        <span class="card-media-body-tag"><b>#经典旋律串烧</b></span>
+         <span class="card-media-body-tag"><b>#圣诞老人DIY大赛</b></span>
+        <span class="card-media-body-tag"><b>#告白环节</b></span>
+         <a class="u-float-right btn btn-outline-primary mb-3 btn-sm" href="http://m.yeguanjia.com/?keyword=%E5%B9%B3%E5%AE%89%E5%A4%9C" target="_blank">现在购票</a>    
+    </div>
+    </div>
+<!-- 222222222222222 -->
+    <div class="card-media border border-primary">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url({{ url_for ('static', filename='assets/img/venue/banner2.jpeg') }});"></div>
+        <span class="card-media-object-tag subtle-sm"><b>火热售票中</b></span>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">2021/12/25</span>
+          <span class="subtle-info"><b>票价 ¥100起</b></span>
+          <a class="subtle u-float-right" href="https://mp.weixin.qq.com/s/Req8cK-DRBeD-mVnG35McA" target="_blank">查看详情</a>
+      </div>
+        <span class="card-media-body-heading"><h6>广州 声音共和Livehouse「K-POP Party」</h6></span>
+         <span class="card-media-body-tag"><b>#韩流派对</b></span>
+        <span class="card-media-body-tag"><b>#KPOP舞蹈</b></span>
+         <a class="u-float-right btn btn-outline-primary mb-3 btn-sm" href="https://wap.showstart.com/pages/activity/detail/detail?ssfrom=user-72144&activityId=167738" target="_blank">现在购票</a>    
+    </div>
+    </div>
+<!-- 33333333333333 -->
+     <div class="card-media border border-primary">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url({{ url_for ('static', filename='assets/img/venue/banner3.jpeg') }});"></div>
+        <span class="card-media-object-tag subtle-sm"><b>火热售票中</b></span>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">2021/12/25</span>
+          <span class="subtle-info"><b>票价 ¥128起</b></span>
+          <a class="subtle u-float-right" href="https://mp.weixin.qq.com/s/hqJVyHZ4WEXGSbhYXoW0Ow" target="_blank">查看详情</a>
+      </div>
+        <span class="card-media-body-heading"><h6>十一城联动「圣诞超级枕头大战」</h6></span>
+         <span class="card-media-body-tag"><b>#解压派对</b></span>
+        <span class="card-media-body-tag"><b>#枕头大战</b></span>
+        <span class="card-media-body-tag"><b>#圣诞抽奖</b></span>
+         <a class="u-float-right btn btn-outline-primary mb-3 btn-sm" href="http://m.yeguanjia.com/?keyword=%E6%9E%95%E5%A4%B4%E5%A4%A7%E6%88%98" target="_blank">现在购票</a>    
+    </div>
+    </div>
+<!-- 444444444444 -->
+     <div class="card-media border border-primary">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url({{ url_for ('static', filename='assets/img/venue/banner4.jpeg') }});"></div>
+        <span class="card-media-object-tag subtle-sm"><b>火热售票中</b></span>
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">2021/12/31</span>
+          <span class="subtle-info"><b>票价 ¥160起</b></span>
+          <a class="subtle u-float-right" href="https://mp.weixin.qq.com/s/XVVfaRXI4Ptc40oGlxki9A" target="_blank">查看详情</a>
+      </div>
+        <span class="card-media-body-heading"><h6>MAO Livehouse「如约 - 崭新」九城跨年派对</h6></span>
+         <span class="card-media-body-tag"><b>#全场酒水畅饮</b></span>
+        <span class="card-media-body-tag"><b>#跨年倒计时</b></span>
+         <a class="u-float-right btn btn-outline-primary mb-3 btn-sm" href="https://active.clewm.net/D0SUo7?qrurl=http://qr16.cn/D0SUo7&gtype=1&key=fe66d16a0e42c94f739021b62c4e7159c6928ef697" target="_blank">现在购票</a>    
+    </div>
+    </div>
+</div>
+</section>
+
+{% endblock %}

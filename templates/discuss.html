@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+<br>
+<!-- 标题 -->
+ <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-start">
+                    <h3 class="section-heading">#我的livehouse初体验</h3>
+                    <br>
+                    <h3 class="section-subheading text-muted">你第一次看的乐队演出是什么？</h3>
+                </div>
+     </div>
+
+
+<!-- 讨论区 -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container bootdey">
+    <div class="col-md-12 bootstrap snippets">
+        <div class="panel">
+    <h4 class="pull-left text-muted">新想法💡</h4>
+  <div class="panel-body">
+    <textarea class="form-control" rows="5" placeholder="我想说..." required=""></textarea>
+    <div class="mar-top clearfix">
+      <button class="btn btn-sm btn-primary pull-right" type="submit">发送</button>
+      
+    </div>
+  </div>
+</div>
+<div class="panel">
+    <div class="panel-body">
+    <!-- Newsfeed Content -->
+    <!--===================================================-->
+    <div class="media-block">
+      <a class="media-left" href="#"><img class="img-sm rounded-circle p-1" alt="Profile Picture" src="{{ url_for('static', filename='assets/img/profile/default.jpeg')}}"></a>
+      <div class="media-body">
+        <div class="mar-btm">
+          <h6>Lisa D.</h6>
+        </div>
+        <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <div class="pad-ver">
+          <div class="btn-group">
+            <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+          </div>
+          <a class="btn btn-sm btn-default btn-hover-primary" href="#">回复</a>
+        </div>
+        <hr>
+
+        <!-- Comments -->
+        <div>
+          <div class="media-block">
+            <a class="media-left" href="#"><img class="img-sm rounded-circle p-1" alt="Profile Picture" src="{{ url_for('static', filename='assets/img/profile/default.jpeg')}}"></a>
+      <div class="media-body">
+        <div class="mar-btm">
+          <h6>Lisa D.</h6>
+        </div>
+        <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <div class="pad-ver">
+          <div class="btn-group">
+            <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+          </div>
+          <a class="btn btn-sm btn-default btn-hover-primary" href="#">回复</a>
+              </div>
+              <hr>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===================================================-->
+    <!-- End Newsfeed Content -->
+
+
+    <!-- Newsfeed Content -->
+    <!--===================================================-->
+    <div class="media-block pad-all">
+        <a class="media-left" href="#"><img class="img-sm rounded-circle p-1" alt="Profile Picture" src="{{ url_for('static', filename='assets/img/profile/default.jpeg')}}"></a>
+      <div class="media-body">
+        <div class="mar-btm">
+          <h6>Lisa D.</h6>
+        </div>
+        <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+          <img class="img-responsive thumbnail" src="https://via.placeholder.com/400x300" alt="Image">
+        <div class="pad-ver">
+          <div class="btn-group">
+            <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+          </div>
+          <a class="btn btn-sm btn-default btn-hover-primary" href="#">回复</a> 
+
+        </div>
+        <hr>
+
+        <!-- Comments -->
+        <div>
+          <div class="media-block pad-all">
+            <a class="media-left" href="#"><img class="img-sm rounded-circle p-1" alt="Profile Picture" src="{{ url_for('static', filename='assets/img/profile/default.jpeg')}}"></a>
+      <div class="media-body">
+        <div class="mar-btm">
+          <h6>Lisa D.</h6>
+        </div>
+        <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <div class="pad-ver">
+          <div class="btn-group">
+            <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+          </div>
+          <a class="btn btn-sm btn-default btn-hover-primary" href="#">回复</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===================================================-->
+    <!-- End Newsfeed Content -->
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block header %}
+<!--头图-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Live Music Is A Lifestyle</div>
+                <div class="masthead-heading text-uppercase">共享最新演出资讯</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#postshow">立即分享</a>
+            </div>
+        </header>
+{% endblock %}
+{% block content %}
+<section class="page-section" id="postshow">
+    <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">发布你看到的演出信息📮</h2>
+                    <h3 class="section-subheading text-muted">和更多乐迷共享你的第一手情报💡</h3>
+                </div>
+    </div>
+
+<div class="container px-5 my-5">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <h4 class="panel-title">演出信息🎫</h4>
+                        <div class="mb-3">
+                            <label class="form-label" for="showtitle">演出名称</label>
+                            <input class="form-control" id="showtitle" type="text" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="showtitle:required">此处不可为空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="artist">参演音乐人</label>
+                            <input class="form-control" id="artist" type="text" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="artist:required">此处不可为空</div>
+                            <div class="invalid-feedback" data-sb-feedback="artist:required"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="time">演出时间</label>
+            <input class="form-control" id="time" type="text" placeholder="开演日期" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="time:required">此处不可为空</div>
+        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="address">演出地点</label>
+            <input class="form-control" id="address" type="text" placeholder="城市/场馆" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="address:required">此处不可为空</div>
+        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="price">票价（选填）</label>
+            <input class="form-control" id="price" type="text"/>
+            
+        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="link">溯源信息</label>
+            <input class="form-control" id="link" type="text" placeholder="请填入你看到演出信息的网页链接" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="link:required">此处不可为空</div>
+        </div>
+                        <h4 class="panel-title">你的信息📝</h4>
+                        <div class="mb-3">
+                            <label class="form-label" for="role">你的身份是？</label>
+            <input class="form-control" id="role" type="text" placeholder="乐迷/乐队成员/场馆负责人" data-sb-validations="required"/>
+            <div class="invalid-feedback" data-sb-feedback="role:required">此处不可为空</div>
+        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="reason">发布演出理由（选填）</label>
+            <input class="form-control" id="reason" type="text" placeholder="你的推荐理由/介绍一下乐队或演出吧"/>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">已提交！感谢你的分享❤️</div>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+                        <br>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">完成✅</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+</section>
+   
+{% endblock %}
